@@ -4,7 +4,7 @@
 --  For more options, you can see `:help option-list`
 
 -- Make line numbers default
--- vim.opt.number = true
+vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
@@ -25,6 +25,8 @@ end)
 
 -- Enable break indent
 vim.opt.breakindent = true
+-- copy indent from current line when starting new one
+vim.opt.autoindent = true
 
 -- Save undo history
 vim.opt.undofile = true

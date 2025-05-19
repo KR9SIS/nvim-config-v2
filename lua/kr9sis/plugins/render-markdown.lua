@@ -6,7 +6,14 @@ return {
   ---@module 'render-markdown'
   ---@type render.md.UserConfig
   opts = {},
-  -- vim.api.nvim_set_hl(0, 'RenderMarkdownH3', { fg = '#00008B' }),
+
+  vim.api.nvim_set_hl(0, 'RenderMarkdownH1Bg', { link = 'DiffAdd' }),
+  vim.api.nvim_set_hl(0, 'RenderMarkdownH2Bg', { link = 'DiffAdd' }),
+  vim.api.nvim_set_hl(0, 'RenderMarkdownH3Bg', { link = 'DiffAdd' }),
+  vim.api.nvim_set_hl(0, 'RenderMarkdownH4Bg', { link = 'DiffAdd' }),
+  vim.api.nvim_set_hl(0, 'RenderMarkdownH5Bg', { link = 'DiffAdd' }),
+  vim.api.nvim_set_hl(0, 'RenderMarkdownH6Bg', { link = 'DiffAdd' }),
+
   config = function()
     require('render-markdown').setup {
       completions = { lsp = { enabled = true } },

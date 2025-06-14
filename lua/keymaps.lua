@@ -52,3 +52,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- vim: ts=2 sts=2 sw=2 et
+
+vim.api.nvim_create_autocmd('CursorHoldI', {
+  desc = 'Exit Insert mode after being inactive for "uptime" amount of time',
+  pattern = '*',
+  command = 'stopinsert',
+})

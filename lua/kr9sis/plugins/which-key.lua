@@ -64,6 +64,7 @@ return {
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { '<leader>d', group = '[D]ebug' },
         { '<leader>z', group = '[Z]essions' },
+        { 'gr', group = 'LSP [R]eactions' },
       },
     },
   },

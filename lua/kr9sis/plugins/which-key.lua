@@ -65,6 +65,7 @@ return {
         { '<leader>d', group = '[D]ebug' },
         { '<leader>z', group = '[Z]essions' },
         { 'gr', group = 'LSP [R]eactions' },
+        { '<leader>u', group = 'Toggle UndoTree', mode = { 'n' } },
       },
     },
   },
